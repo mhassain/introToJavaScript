@@ -1,0 +1,1 @@
+IntroToJavaScript quiz answer from Udacity Course.

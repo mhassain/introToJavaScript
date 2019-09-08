@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>IntroToJavaScript</title>
+  </head>
+  <body>
+    <div>
+      <h1>Lesson-4: Loops</h1>
+    </div>
+    <p>
+      NASA's countdown to launch includes checkpoints where NASA engineers
+      complete certain technical tasks. During the final minute, NASA has 6
+      tasks to complete:
+    </p>
+    <ul>
+      <li>Orbiter transfers from ground to internal power (T-50 seconds)</li>
+      <li>
+        Ground launch sequencer is go for auto sequence start (T-31 seconds)
+      </li>
+      <li>Activate launch pad sound suppression system (T-16 seconds)</li>
+      <li>Activate main engine hydrogen burnoff system (T-10 seconds)</li>
+      <li>Main engine start (T-6 seconds)</li>
+      <li>Solid rocket booster ignition and liftoff! (T-0 seconds)</li>
+    </ul>
+
+    <h3>Directions</h3>
+    <p>Write a while loop that counts down from 60 seconds and:</p>
+
+    <ul>
+      <li>If there's a task being completed, it prints out the task</li>
+      <li>
+        If there is no task being completed, it prints out the time as T-x
+        seconds
+      </li>
+    </ul>
+
+    <script>
+      var time = 60;
+
+      while (time >= 0) {
+        var prefix = "T-" + time + " seconds";
+        var countDown = "";
+
+        countDown =
+          time === 50
+            ? "Orbiter transfers from ground to internal power"
+            : time === 31
+            ? "Ground launch sequencer is go for auto sequence start"
+            : time === 16
+            ? "Activate launch pad sound suppression system"
+            : time === 10
+            ? "Activate main engine hydrogen burnoff system"
+            : time === 6
+            ? "Main engine start"
+            : time === 0
+            ? "Solid rocket booster ignition and liftoff!"
+            : prefix;
+        console.log(countDown);
+        time--;
+      }
+    </script>
+  </body>
+</html>

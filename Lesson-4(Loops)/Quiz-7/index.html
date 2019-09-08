@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>IntroToJavaScript</title>
+  </head>
+  <body>
+    <div>
+      <h1>Lesson-4: Loops</h1>
+    </div>
+    <h3>
+      Theater seats often display a row and seat number to help theatergoers
+      find their seats. If there are 26 rows (0 to 25) and 100 seats (0 to 99)
+      in each row, write a nested for loop to print out all of the different
+      seat combinations in the theater.
+    </h3>
+    Rulls:
+
+    <ul>
+      <li>
+        Write a nested for loop to print out all of the different seat
+        combinations in the theater.
+      </li>
+      <li>The first row-seat combination should be 0-0</li>
+      <li>The last row-seat combination will be 25-99</li>
+    </ul>
+
+    <h4>output each row and seat number on a separate line</h4>
+    <script>
+      var row;
+      var seat;
+
+      for (row = 0; row <= 25; row++) {
+        for (seat = 0; seat <= 99; seat++) {
+          console.log(row + "-" + seat);
+        }
+      }
+    </script>
+  </body>
+</html>
