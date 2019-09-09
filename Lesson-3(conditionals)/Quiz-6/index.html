@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>introToJavaScript-Udacity</title>
+  </head>
+  <body>
+    <h2>Lesson-3: Conditionals</h2>
+
+    <h3>
+      <p>Directions</p>
+      <p>
+        Ice cream is one of the most versatile desserts on the planet because it
+        can be done up so many different ways. Using logical operators, write a
+        series of complex logical expressions that prints only if the following
+        conditions are true:
+      </p>
+    </h3>
+    <ul>
+      <li>if flavor is set to vanilla or chocolate and</li>
+      <li>if vessel is set to cone or bowl and</li>
+      <li>if toppings is set to sprinkles or peanuts</li>
+
+      <p>Make sure to test your code with different values. For example,</p>
+      <pre>
+        If <b>flavor</b> equals <b>"chocolate"</b>, <b>vessel</b> equals <b>"cone"</b> and <b>toppings</b> equals <b>"sprinkles"</b>, then <br/>
+        "I'd like two scoops of chocolate ice cream in a cone with sprinkles." </pre>
+    </ul>
+
+    <script>
+      var flavor = "chocolate";
+      var vessel = "cone";
+      var toppings = "peanuts";
+
+      if (
+        (flavor === "vanilla" || flavor === "chocolate") &&
+        (vessel === "cone" || vassel === "bowl") &&
+        (toppings === "sprinkles" || toppings === "peanuts")
+      ) {
+        console.log(
+          `I'd like to scoops of ${flavor} ice cream in a ${vessel} with ${toppings}. `
+        );
+      }
+    </script>
+  </body>
+</html>

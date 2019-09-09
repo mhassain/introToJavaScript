@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>introToJavaScript-Udacity</title>
+  </head>
+  <body>
+    <h2>Lesson-3: Conditionals</h2>
+
+    <h3>
+      A murder mystery is a game typically played at parties wherein one of the
+      partygoers is secretly, and unknowingly, playing a murderer, and the other
+      attendees must determine who among them is the criminal.
+    </h3>
+
+    <h4>Here's what we know! In this murder mystery there are:</h4>
+
+    <ul>
+      <li>
+        <b>four rooms:</b> the ballroom, gallery, billiards room, and dining
+        room,
+      </li>
+      <li><b>four weapons:</b> poison, a trophy, a pool stick, and a knife,</li>
+      <li>
+        and <b>four suspects:</b> Mr. Parkes, Ms. Van Cleve, Mrs. Sparr, and Mr.
+        Kalehoff.
+      </li>
+
+      <div>
+        <p>
+          We also know that each weapon corresponds to a particular room, so...
+        </p>
+
+        <li>the <b>poison</b> belongs to the <b>ballroom</b>,</li>
+
+        <li>the <b>trophy</b> belongs to the ,<b>gallery</b></li>
+
+        <li>the <b>pool stick</b> belongs to the <b>billiards room</b>,</li>
+        <li>and the <b>knife</b> belongs to the <b>dining room.</b></li>
+      </div>
+
+      <div>
+        <p>
+          And we know that each suspect was located in a specific room at the
+          time of the murder.
+        </p>
+
+        <li><b>Mr. Parkes </b> was located in the <b>dining room.</b></li>
+        <li><b>Ms. Van Cleve</b> was located in the <b>gallery.</b></li>
+        <li><b>Mrs. Sparr </b> was located in the <b>billiards room.</b></li>
+        <li><b>Mr. Kalehoff</b> was located in the <b>ballroom</b>.</li>
+      </div>
+      <p>
+        <i
+          >If room equals gallery and suspect equals Ms. Van Cleve, then <br />
+          Ms. Van Cleve did it in the gallery with the trophy! should be printed
+          to the console.</i
+        >
+      </p>
+    </ul>
+
+    <script>
+      var room = "gallery";
+      var suspect = "Ms. Van Cleve";
+      var weapon = "";
+      var solved = false;
+
+      if (room === "dining room" && suspect === "Mr. Parkes") {
+        weapon = "knife";
+        solved = true;
+      } else if (room === "billiards room" && suspect === "Mrs. Sparr") {
+        weapon = "pool stick";
+        solved = true;
+      } else if (room === "gallery" && suspect === "Ms. Van Cleve") {
+        weapon = "trophy";
+        solved = true;
+      } else if (room === "ballroom" && suspect === "Mr. Kalehoff") {
+        weapon = "poison";
+        solved = true;
+      }
+      if (solved) {
+        console.log(`${suspect} did it in the ${room} with the ${weapon} `);
+      }
+    </script>
+  </body>
+</html>

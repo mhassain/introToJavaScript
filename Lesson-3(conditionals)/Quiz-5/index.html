@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>introToJavaScript-Udacity</title>
+  </head>
+  <body>
+    <h2>Lesson-3: Conditionals</h2>
+
+    <img
+      src="https://video.udacity-data.com/topher/2016/November/582cc7b8_atm-check-balance-cropped/atm-check-balance-cropped.jpeg"
+      alt=""
+      width="800"
+    />
+    <h4>
+      Use the following variables in your solution:
+      <ul>
+        <li>balance - the account balance</li>
+        <li>isActive - if account is active</li>
+        <li>checkBalance - if you want to check balance</li>
+      </ul>
+    </h4>
+
+    <pre>
+      <i>To print out the account balance with decimal points (i.e. 325.00), use
+        the .toFixed() method and pass it the number of decimal points you want
+        to use. For example, balance.toFixed(2) returns 325.00.</i>
+    </pre>
+
+    <h3>
+      <pre>
+If checkBalance equals true and isActive equals false, then Your
+        account is no longer active. should be printed to the console.</pre
+      >
+    </h3>
+
+    <script>
+      var balance = -1;
+      var checkBalance = true;
+      var isActive = true;
+
+      if (isActive && balance > 0) {
+        console.log(`Your account is active and your balance is ${balance} $ `);
+      } else if (!isActive) {
+        console.log("Your account is no longer active");
+      } else if (isActive && balance === 0) {
+        console.log(`Your account is empty`);
+      } else if (isActive && balance < 0) {
+        console.log(`Your balance is negative. Please contact bank.`);
+      }
+    </script>
+  </body>
+</html>
