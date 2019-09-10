@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!------------Bootstrap------------------>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <title>introToJavaScript-Udacity</title>
+  </head>
+  <body>
+    <h2>Lesson-3: Conditionals</h2>
+
+    <table class="table table-striped mt-5 ml-4" style="width: 50%">
+      <thead>
+        <tr>
+          <th scope="col">Size</th>
+          <th scope="col">width</th>
+          <th scope="col">Length</th>
+          <th scope="col">Sleeve</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">S</th>
+          <td>18"</td>
+          <td>28"</td>
+          <td>8.13"</td>
+        </tr>
+        <tr>
+          <th scope="row">M</th>
+          <td>20"</td>
+          <td>29"</td>
+          <td>8.38"</td>
+        </tr>
+        <tr>
+          <th scope="row">L</th>
+          <td>22"</td>
+          <td>30"</td>
+          <td>8.63"</td>
+        </tr>
+        <tr>
+          <th scope="row">XL</th>
+          <td>24"</td>
+          <td>31"</td>
+          <td>8.88"</td>
+        </tr>
+        <tr>
+          <th scope="row">2XL</th>
+          <td>26"</td>
+          <td>33"</td>
+          <td>9.63"</td>
+        </tr>
+        <tr>
+          <th scope="row">3XL</th>
+          <td>28"</td>
+          <td>34"</td>
+          <td>10.13"</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Direction:</h3>
+    <pre>
+      Use the sizing chart above, create a series of logical expressions that
+      prints the size of a t-shirt based on the measurements of <b>shirtWidth</b>,
+      <b>shirtLength</b>, and <b>shirtSleeve</b>. Valid sizes include <b>S, M, L, XL, 2XL, and 3XL.</b>
+    </pre>
+
+    <p>
+      <b
+        >Tip: Make sure to test your code with different values. For example,</b
+      >
+    </p>
+
+    <ul>
+      <li>
+        If shirtWidth equals 19, shirtLength equals 28 and shirtSleeve equals
+        8.21, then S should be printed to the console.
+      </li>
+      <li>
+        If shirtWidth equals 26, shirtLength equals 33 and shirtSleeve equals
+        9.63, then 2XL should be printed to the console.
+      </li>
+      <li>
+        If shirtWidth equals 18, shirtLength equals 29 and shirtSleeve equals
+        8.47, then N/A should be printed to the console.
+      </li>
+    </ul>
+    <script>
+      var shirtWidth = 19;
+      var shirtLength = 28;
+      var shirtSleeve = 8.36;
+
+      if (
+        shirtWidth >= 18 &&
+        shirtWidth < 20 &&
+        shirtLength >= 28 &&
+        shirtLength < 29 &&
+        shirtSleeve >= 8.13 &&
+        shirtSleeve < 8.38
+      ) {
+        console.log("S");
+      } else if (
+        shirtWidth >= 20 &&
+        shirtWidth < 22 &&
+        shirtLength >= 29 &&
+        shirtLength < 30 &&
+        shirtSleeve >= 8.38 &&
+        shirtSleeve < 8.63
+      ) {
+        console.log("M");
+      } else if (
+        shirtWidth >= 22 &&
+        shirtWidth < 24 &&
+        shirtLength >= 30 &&
+        shirtLength < 31 &&
+        shirtSleeve >= 8.63 &&
+        shirtSleeve < 8.88
+      ) {
+        console.log("L");
+      } else if (
+        shirtWidth >= 24 &&
+        shirtWidth < 26 &&
+        shirtLength >= 31 &&
+        shirtLength < 33 &&
+        shirtSleeve >= 8.88 &&
+        shirtSleeve < 9.63
+      ) {
+        console.log("XL");
+      } else if (
+        shirtWidth >= 26 &&
+        shirtWidth < 28 &&
+        shirtLength >= 33 &&
+        shirtLength < 34 &&
+        shirtSleeve >= 9.63 &&
+        shirtSleeve < 10.13
+      ) {
+        console.log("2XL");
+      } else if (
+        shirtWidth === 28 &&
+        shirtLength === 34 &&
+        shirtSleeve === 10.13
+      ) {
+        console.log("3XL");
+      } else {
+        console.log("N/A");
+      }
+    </script>
+  </body>
+</html>

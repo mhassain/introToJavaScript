@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>introToJavaScript-Udacity</title>
+  </head>
+  <body>
+    <h2>Lesson-3: Conditionals</h2>
+    h4 In 2015, the U.S. Bureau of Labor Statistics conducted research to reveal
+    how average salary is
+    <ul>
+      <li>no high school diploma earned an average of $25,636/year,</li>
+      <li>a high school diploma earned an average of $35,256/year,</li>
+      <li>an Associate's degree earned an average of $41,496/year,</li>
+      <li>a Bachelor's degree earned an average of $59,124/year,</li>
+      <li>a Master's degree earned an average of $69,732/year,</li>
+      <li>a Professional degree earned an average of $89,960/year,</li>
+      <li>and a Doctoral degree earned an average of $84,396/year.</li>
+    </ul>
+    <h3>
+      Directions: Write a switch statement to set the average salary of a person
+      based on their type of completed education.
+    </h3>
+
+    <h4>
+      Tip: To print out the average salary with commas (i.e. 59,124), use the
+      toLocaleString() method and pass it the locale "en-US". For example,
+      salary.toLocaleString("en-US").
+    </h4>
+
+    <pre>
+      If education equals "an Associate's degree", 
+      then the string"In 2015, a person with an Associate's degree earned an average of $41,496/year." 
+      should be printed to the console.</pre
+    >
+    <script>
+      var education = "a Bachelor's degree";
+      var salary = 0;
+
+      switch (education) {
+        case "a high school diploma":
+          salary = 35256;
+          break;
+        case "an Associate's degree":
+          salary = 41496;
+          break;
+        case "a Bachelor's degree":
+          salary = 59124;
+          break;
+        case "a Master's degree":
+          salary = 69732;
+          break;
+        case "a Professional degree":
+          salary = 89960;
+          break;
+        case "a Doctoral degree":
+          salary = 84936;
+          break;
+        default:
+          salary = 25636;
+      }
+
+      console.log(
+        `In 2015, a person with ${education} earned an average of $${salary.toLocaleString(
+          "en-US"
+        )}/year. `
+      );
+    </script>
+  </body>
+</html>
