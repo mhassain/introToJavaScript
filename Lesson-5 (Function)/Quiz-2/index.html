@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>IntroToJavaScript</title>
+  </head>
+  <body>
+    <div>
+      <h1>Lesson-5: Function</h1>
+      <h3>
+        <b>Directions:</b>
+        <p>
+          For this quiz, you're going to create a function called
+          buildTriangle() that will accept an input (the triangle at its widest
+          width) and will return the string representation of a triangle.
+        </p>
+      </h3>
+      <b
+        >We've given you one function makeLine() to start with. The function
+        takes in a line length, and builds a line of asterisks and returns the
+        line with a newline character.</b
+      >
+      <h3>You will need to call this makeLine() function in buildTriangle()</h3>
+    </div>
+    <script>
+      function makeLine(length) {
+        var line = "";
+        for (var j = 1; j <= length; j++) {
+          line += "* ";
+        }
+        return line + "\n";
+      }
+
+      function buildTriangle(num) {
+        var triangle = "";
+        for (var i = 1; i <= num; i++) {
+          var make = makeLine(i);
+          triangle += make;
+        }
+        return triangle;
+      }
+
+      console.log(buildTriangle(10));
+    </script>
+  </body>
+</html>

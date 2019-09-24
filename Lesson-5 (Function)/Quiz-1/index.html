@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>IntroToJavaScript</title>
+  </head>
+  <body>
+    <div>
+      <h1>Lesson-5: Function</h1>
+      <p>
+        Write a function called `laugh` with a parameter named `num` that
+        represents the number of "ha"s to return.
+      </p>
+      <b>Note:</b>
+      <ul>
+        <li>
+          make sure your the final character is an exclamation mark ("!") make
+          sure
+        </li>
+        <li>
+          that your function produces the correct results when it is called
+          multiple times
+        </li>
+      </ul>
+    </div>
+    <script>
+      function laugh(num) {
+        var laughString = "";
+
+        for (var i = 0; i < num; i++) {
+          laughString += "ha";
+          string = laughString + "!";
+        }
+        return string;
+      }
+
+      console.log(laugh(3));
+    </script>
+  </body>
+</html>
