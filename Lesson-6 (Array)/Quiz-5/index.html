@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Array</title>
+</head>
+<body>
+	<h2>Consider the following array</h2>
+	var team = ["Oliver Wood", "Angelina Johnson", "Katie Bell", "Alicia Spinnet", "George Weasley", "Fred Weasley", "Harry Potter"];
+	<br/> <br/>
+	 <b>Directions:</b>
+	 <p>Create a function called <b>hasEnoughPlayers()</b> that takes the <b>team</b> array as an argument and returns <b>true</b> or <b>false</b> depending on if the array has at least seven players.</p>
+
+</body>
+</html>
+
+<script>
+	var team = ["Oliver Wood", "Angelina Johnson", "Katie Bell", "Alicia Spinnet", "George Weasley", "Fred Weasley", "Harry Potter"];
+
+function hasEnoughPlayers(players){
+    if(players.length >= 7){
+        return true;
+    }else {
+        return false;
+    }
+}
+console.log(hasEnoughPlayers(team));
+</script>
